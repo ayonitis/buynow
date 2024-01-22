@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "944301758449",
+    "project_id": "buy-now-adee5",
+    "storage_bucket": "buy-now-adee5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944301758449:android:4331d2a4b0a6f33bedd650",
+        "android_client_info": {
+          "package_name": "com.creativeinstitute.buynow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8_BvQTd7Hwh1Yo_nZSG_mti7KsI2sHE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
