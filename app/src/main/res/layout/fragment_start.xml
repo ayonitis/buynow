@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".views.starter.StartFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@mipmap/ic_shoppingbag_round"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_32sdp"
+        android:gravity="center"
+        android:fontFamily="@font/alatsi"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:text="Welcome to Buy Now!"
+        android:textColor="#FF5722" />
 
-</FrameLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="#ff9800"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="#ff9800"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        android:layout_marginVertical="@dimen/_2sdp"
+        />
+
+</LinearLayout>
