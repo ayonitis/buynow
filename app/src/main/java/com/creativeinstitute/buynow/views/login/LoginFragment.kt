@@ -8,24 +8,13 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.creativeinstitute.buynow.R
+import com.creativeinstitute.buynow.base.BaseFragment
 import com.creativeinstitute.buynow.databinding.FragmentLoginBinding
 import com.creativeinstitute.buynow.isEmpty
+import dagger.hilt.android.AndroidEntryPoint
 
-
-class LoginFragment : Fragment() {
-    lateinit var binding: FragmentLoginBinding
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        binding = FragmentLoginBinding.inflate(inflater, container, false)
-        setLoginListener()
-        setNewAccountListener()
-        return binding.root
-    }
-
+@AndroidEntryPoint
+class LoginFragment : BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::inflate) {
     private fun setNewAccountListener() {
         with(binding) {
             btnSignUp.setOnClickListener{
@@ -34,7 +23,7 @@ class LoginFragment : Fragment() {
         }
     }
 
-    private fun setLoginListener() {
+    override fun setListener() {
         with(binding) {
             btnLogin.setOnClickListener {
                 etEmail.isEmpty() == false
@@ -46,5 +35,13 @@ class LoginFragment : Fragment() {
                 }
             }
         }
+    }
+
+    override fun setPreviousAccount() {
+        TODO("Not yet implemented")
+    }
+
+    override fun allObserver() {
+        TODO("Not yet implemented")
     }
 }

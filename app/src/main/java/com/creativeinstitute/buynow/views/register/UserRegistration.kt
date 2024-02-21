@@ -1,9 +1,9 @@
 package com.creativeinstitute.buynow.views.register
 
-data class User(
+data class UserRegistration(
     var name: String,
     var email: String,
     val password: String,
     val userType: String,
-    val userID: String
+    var userID: String
 )
